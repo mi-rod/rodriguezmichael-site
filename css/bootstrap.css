@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6421,7 +6421,7 @@ body.splash-two {
   height: auto;
   z-index: -100; }
 
-.text-email-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-whatsapp-alt {
+.text-email-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-whatsapp-alt, .text-github-alt {
   color: #fff;
   height: 40px;
   width: 40px;
@@ -6429,8 +6429,7 @@ body.splash-two {
   display: inline-block;
   line-height: 40px; }
 
-.text-email-alt:hover, .text-facebook-alt:hover, .text-linkedin-alt:hover, .text-google-alt:hover,
-.text-whatsapp-alt:hover {
+.text-email-alt:hover, .text-facebook-alt:hover, .text-linkedin-alt:hover, .text-google-alt:hover, .text-whatsapp-alt:hover, .text-github-alt:hover {
   background: #fff;
   border-color: #fff; }
 
@@ -6448,3 +6447,6 @@ body.splash-two {
 
 .text-whatsapp, .text-whatsapp-alt:hover {
   color: #25D366; }
+
+.text-github, .text-github-alt:hover {
+  color: #333333; }
