@@ -1,0 +1,22 @@
+name: Deploy to Firebase (Direct)
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    env:
+      # This forces the tool to know it's in a CI environment (No questions!)
+      CI: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Firebase Tools
+        run: npm install -g firebase-tools
+
+      - name: Deploy
+        run: firebase deploy --only hosting --project rodriguezmichael-site --json
+        env:
+          # We inject the JSON directly into the tool's expected variable
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_RODRIGUEZMICHAEL_SITE }}
